@@ -1,0 +1,28 @@
+.form__selector {
+}
+.selectors-group {
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 0.5rem;
+}
+.selectorBtn {
+   cursor: pointer;
+   border-radius: var(--radii-small);
+   background-color: var(--cyan-500);
+   text-align: center;
+   color: var(--white);
+   padding: 0.75rem;
+   font-size: 1rem;
+   transition: all ease 0.3s;
+}
+.selectorBtn:hover {
+   background-color: var(--cyan);
+   color: var(--cyan-500);
+   transition: all ease 0.3s;
+}
+@media(min-width: 767px) {
+   .selectors-group {
+      grid-template-columns: repeat(3, 1fr);
+   }
+}

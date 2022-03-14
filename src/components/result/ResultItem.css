@@ -1,0 +1,25 @@
+.result__amount {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.result__title {
+   font-size: var(--fz-small);
+}
+.result__amount-title {
+   color: var(--white);
+}
+.result__price {
+   color: var(--cyan);
+}
+@media(min-width: 767px) {
+   .result__price {
+      font-size: 32px;
+   }
+   .result__amount-title {
+      font-size: 16px;
+   }
+   .result__amount-subtitle {
+      font-size: 12px;
+   }
+}

@@ -1,0 +1,12 @@
+.form__title-block {
+   display: flex;
+   justify-content: space-between;
+}
+.title {
+   font-size: var(--fz-small);
+   padding-bottom: 0.25rem;
+}
+.error {
+   opacity: 0;
+   visibility: hidden;
+}

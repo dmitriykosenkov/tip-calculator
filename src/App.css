@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+/*  */
+.dashboard {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-top: 4rem;
+}
+.dashboard__content {
+   width: 100%;
+   max-width: 900px;
+   background-color: var(--white);
+   border-radius: var(--radii-regular);
+   padding: 1.25rem;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+}
+.dashboard__form {
+   display: flex;
+   flex-direction: column;
+   gap: 2.5rem;
+}
+.input {
+   width: 100%;
+   font-size: var(--fz-basic);
+   border-radius: var(--radii-small);
+   background-color: var(--cyan-100);
+   border: none;
+   color: var(--cyan-500);
+   font-weight: var(--fw-bold);
+   /* background-image: url("./images/icon-dollar.svg"); */
+   background-repeat: no-repeat;
+   background-position: 1rem 50%;
+   padding: 0.25rem 1rem;
+}
+.input-selector {
+   background-image: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dashboard__result {
+   background-color: var(--cyan-500);
+   border-radius: 10px;
+   padding: 1.5rem 1rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   gap: 1.5rem;
+}
+.reset__btn {
+   cursor: pointer;
+   background-color: var(--cyan);
+   color: var(--cyan-500);
+   padding: 1rem 0;
+   font-weight: var(--fw-bold);
+   border-radius: var(--radii-small);
+   font-size: 18px;
+   line-height: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (min-width: 767px) {
+   .dashboard__content {
+      flex-direction: row;
+      gap: 0;
+   }
+   .dashboard__form,
+   .dashboard__result {
+      flex: 50%;
+      padding: 2rem;
+   }
+   .dashboard__result-schedule {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+   }
 }
