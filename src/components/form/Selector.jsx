@@ -17,7 +17,6 @@ const Selector = ({tip, setTip}) => {
    const onSelectPercent = (e) => {
       setTip(+e.currentTarget.dataset.value);
    };
-   console.log(Math.round(21.56));
    return (
       <div class="form__selector">
          <div class="form__selector-title title">Select Tip %</div>
