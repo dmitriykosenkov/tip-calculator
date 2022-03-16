@@ -21,6 +21,10 @@
    color: var(--cyan-500);
    transition: all ease 0.3s;
 }
+.selectorBtn:disabled {
+   background-color: var(--cyan-300);
+   color: var(--white);
+}
 @media(min-width: 767px) {
    .selectors-group {
       grid-template-columns: repeat(3, 1fr);

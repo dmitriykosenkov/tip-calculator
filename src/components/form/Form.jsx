@@ -2,10 +2,7 @@ import React, { useState } from "react";
 import "./Form.css";
 
 const Form = ({ title, value, setValue }) => {
-   const [localeValue, setLocaleValue] =useState("")
-   const onValuePercent = () => {
-      setValue(+localeValue);
-   };
+   
    return (
       <div class="form__item">
          <div class="form__title-block">
@@ -16,9 +13,8 @@ const Form = ({ title, value, setValue }) => {
             type="text"
             placeholder="0"
             class="form__item-input input"
-            value={localeValue}
-            onChange={e => setLocaleValue(e.target.value)}
-            onBlur={onValuePercent}
+            value={value}
+            onChange={e => setValue(e.target.value)}
          />
       </div>
    );

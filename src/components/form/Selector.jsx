@@ -8,7 +8,7 @@ const values = [
    {value: '25%', dataset: '25'},
    {value: '50%', dataset: '50'},
 ]
-const Selector = ({tip, setTip}) => {
+const Selector = ({disable, setTip}) => {
    const [localValue, setLocalValue] = useState("");
    const onCustomPercent = () => {
       setTip(+localValue)
@@ -29,6 +29,7 @@ const Selector = ({tip, setTip}) => {
                class="selectorBtn"
                data-value={item.dataset}
                value={item.value}
+               disabled={disable}
             />
             ))}
             <input
@@ -37,6 +38,7 @@ const Selector = ({tip, setTip}) => {
                value={localValue}
                onChange={(e) => setLocalValue(e.target.value)}
                onBlur={onCustomPercent}
+               disabled
                class="input input-selector"
             />
          </div>
