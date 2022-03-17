@@ -67,7 +67,6 @@ function App() {
                   </button>
                </div>
             </div>
-         </div>
          <div class="attribution">
             Challenge by{" "}
             <a
@@ -81,6 +80,7 @@ function App() {
                Dmytro Kosenkov
             </a>
             .
+         </div>
          </div>
       </div>
    );
