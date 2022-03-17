@@ -3,7 +3,7 @@ import "./ResultItem.css";
 
 const ResultItem = ({ title, count }) => {
    const roundPlus = (x, n) => {
-      if (isNaN(x) || isNaN(n)) return false;
+      if (isNaN(x) || isNaN(n)) return 0;
       const m = Math.pow(10, n);
       return Math.round(x * m) / m;
    }

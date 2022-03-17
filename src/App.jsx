@@ -59,7 +59,7 @@ function App() {
                </div>
                <div class="dashboard__result">
                   <div class="dashboard__result-schedule">
-                     <ResultItem title="Tip Amount" count={tip} />
+                     <ResultItem title="Tip Amount" count={tip / peopleCount } />
                      <ResultItem title="Total" count={totalWithTip} />
                   </div>
                   <button onClick={resetForm} class="reset__btn" type="reset">
