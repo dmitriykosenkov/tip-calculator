@@ -1,10 +1,13 @@
-/*  */
+.attribution {
+   font-size: 12px;
+   text-align: center;
+}
 .dashboard {
    min-height: 100vh;
    display: flex;
    align-items: center;
    justify-content: center;
-   padding-top: 4rem;
+   padding: 4rem 0 1rem;
 }
 .dashboard__content {
    width: 100%;
