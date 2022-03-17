@@ -1,8 +1,6 @@
-import React, { useState } from "react";
 import "./Form.css";
 
 const Form = ({ title, value, setValue }) => {
-   
    return (
       <div class="form__item">
          <div class="form__title-block">
