@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-// import Form from "./components/form/Form";
+import Form from "./components/form/Form";
 import Selector from "./components/Selector/Selector";
 import ResultItem from "./components/result/ResultItem";
 
@@ -49,7 +49,7 @@ function App() {
          <div class="dashboard">
             <div class="dashboard__content">
                <div class="dashboard__form form">
-                  {/* <Form title="Bill" value={bill} setValue={setBill} /> */}
+                  <Form title="Bill" value={bill} setValue={setBill} />
                   <Selector
                      tip={tip}
                      setCustomTip={setCustomTip}
@@ -57,11 +57,11 @@ function App() {
                      setTip={setTip}
                      disable={disable}
                   />
-                  {/* <Form
+                  <Form
                      title="Number 0f People"
                      value={peopleCount}
                      setValue={setPeopleCount}
-                  /> */}
+                  />
                </div>
                <div class="dashboard__result">
                   <div class="dashboard__result-schedule">
