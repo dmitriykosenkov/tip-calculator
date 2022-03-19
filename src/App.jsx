@@ -24,7 +24,6 @@ function App() {
       } else {
          setDisable(true);
          setTotalWithTip("")
-         // setTip("")
       }
       console.log(bill, "Bill");
       console.log(peopleCount, "peopleCount");

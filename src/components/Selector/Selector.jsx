@@ -1,6 +1,4 @@
-import { useEffect, useState } from "react";
 import s from "./Selector.module.css";
-import classNames from "classnames";
 
 const values = [
    { value: "5%", dataset: "5" },
