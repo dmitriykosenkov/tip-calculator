@@ -1,22 +1,24 @@
-import React from "react";
-import "./ResultItem.css";
+import React, { memo, useEffect, useState } from "react";
+import s from "./ResultItem.module.css";
 
-const ResultItem = ({ title, count }) => {
+const ResultItem = memo(({ title, count }) => {
    const roundPlus = (x, n) => {
-      if (isNaN(x) || isNaN(n)) return 0;
+      if (isNaN(x) || isNaN(n)) return "0.00";
       const m = Math.pow(10, n);
       return Math.round(x * m) / m;
    }
+   
+   const roundCount = roundPlus(count, 2)
 
    return (
-      <div class="result__amount">
-         <div class="result__title">
-            <div class="result__amount-title">{title}</div>
-            <div class="result__amount-subtitle">/ person</div>
+      <div className={s.resultAmount}>
+         <div className={s.resultTitle}>
+            <div className={s.resultAmountTitle}>{title}</div>
+            <div className={s.resultAmountSubtitle}>/ person</div>
          </div>
-         <div class="result__price">${roundPlus(count, 2)}</div>
+         <div className={s.resultPrice}>${roundCount}</div>
       </div>
    );
-};
+})
 
 export default ResultItem;

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import Form from "./components/form/Form";
-import Selector from "./components/form/Selector";
+import Form from "./components/Form/Form";
+import Selector from "./components/Selector/Selector";
 import ResultItem from "./components/result/ResultItem";
 
 function App() {
@@ -21,11 +21,17 @@ function App() {
          const totalPerPersone = bill / peopleCount;
          setTotal(totalPerPersone);
          setTotalWithTip(totalPerPersone) //
+      } else {
+         setDisable(true);
+         setTotalWithTip("")
+         // setTip("")
       }
+      console.log(bill, "Bill");
+      console.log(peopleCount, "peopleCount");
    }, [bill, peopleCount]);
 
    useEffect(() => {
-
+     
       const tipPerPersone = (total * tip) / 100;
       setTotalWithTip(tipPerPersone + total);
 
@@ -46,6 +52,7 @@ function App() {
                <div class="dashboard__form form">
                   <Form title="Bill" value={bill} setValue={setBill} />
                   <Selector
+                     tip={tip}
                      setCustomTip={setCustomTip}
                      customTip={customTip}
                      setTip={setTip}
@@ -62,7 +69,7 @@ function App() {
                      <ResultItem title="Tip Amount" count={tip / peopleCount } />
                      <ResultItem title="Total" count={totalWithTip} />
                   </div>
-                  <button onClick={resetForm} class="reset__btn" type="reset">
+                  <button disabled={disable} onClick={resetForm} class="reset__btn" type="reset">
                      RESET
                   </button>
                </div>

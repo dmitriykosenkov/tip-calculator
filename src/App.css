@@ -26,25 +26,6 @@
    flex-direction: column;
    gap: 2.5rem;
 }
-.input {
-   width: 100%;
-   font-size: var(--fz-basic);
-   border-radius: var(--radii-small);
-   background-color: var(--cyan-100);
-   border: none;
-   color: var(--cyan-500);
-   font-weight: var(--fw-bold);
-   background-image: url("./images/icon-dollar.svg");
-   background-repeat: no-repeat;
-   background-position: 1rem 50%;
-   padding: 0.25rem 1rem;
-}
-.input-selector {
-   background-image: none;
-}
-/* .input:disabled::placeholder {
-   display: none;
-} */
 
 .dashboard__result {
    background-color: var(--cyan-500);
@@ -64,6 +45,12 @@
    border-radius: var(--radii-small);
    font-size: 18px;
    line-height: 1;
+   transition: all ease 0.3s;
+}
+.reset__btn:disabled {
+   background-color: var(--cyan-400);
+   color: var(--cyan-500);
+   transition: all ease 0.3s;
 }
 
 @media (min-width: 767px) {

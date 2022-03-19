@@ -1,0 +1,22 @@
+.formTitleBlock {
+   display: flex;
+   justify-content: space-between;
+}
+.title {
+   font-size: var(--fz-small);
+   padding-bottom: 0.25rem;
+}
+.error {
+   opacity: 0;
+   visibility: hidden;
+}
+.input {
+   width: 100%;
+   font-size: var(--fz-basic);
+   border-radius: var(--radii-small);
+   background-color: var(--cyan-100);
+   border: none;
+   color: var(--cyan-500);
+   font-weight: var(--fw-bold);
+   padding: 0.25rem 1rem;
+}

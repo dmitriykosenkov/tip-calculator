@@ -1,25 +1,25 @@
-.result__amount {
+.resultAmount {
    display: flex;
    justify-content: space-between;
    align-items: center;
 }
-.result__title {
+.resultTitle {
    font-size: var(--fz-small);
 }
-.result__amount-title {
+.resultAmountTitle {
    color: var(--white);
 }
-.result__price {
+.resultPrice {
    color: var(--cyan);
 }
 @media(min-width: 767px) {
-   .result__price {
+   .resultPrice {
       font-size: 32px;
    }
-   .result__amount-title {
+   .resultAmountTitle {
       font-size: 16px;
    }
-   .result__amount-subtitle {
+   .resultAmountSubtitle {
       font-size: 12px;
    }
 }

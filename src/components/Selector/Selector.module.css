@@ -1,4 +1,8 @@
-.selectors-group {
+.title {
+   font-size: var(--fz-small);
+   padding-bottom: 0.25rem;
+}
+.selectorsGroup {
    width: 100%;
    display: grid;
    grid-template-columns: repeat(2, 1fr);
@@ -14,6 +18,10 @@
    font-size: 1rem;
    transition: all ease 0.3s;
 }
+.selectorBtnActive {
+   background-color: var(--cyan);
+   color: var(--cyan-500);
+}
 .selectorBtn:hover {
    background-color: var(--cyan);
    color: var(--cyan-500);
@@ -23,9 +31,21 @@
    background-color: var(--cyan-300);
    color: var(--white);
 }
+.input {
+   width: 100%;
+   font-size: var(--fz-basic);
+   border-radius: var(--radii-small);
+   background-color: var(--cyan-100);
+   border: none;
+   color: var(--cyan-500);
+   font-weight: var(--fw-bold);
+   background-repeat: no-repeat;
+   background-position: 1rem 50%;
+   padding: 0.25rem 1rem;
+}
 
 @media(min-width: 767px) {
-   .selectors-group {
+   .selectorsGroup {
       grid-template-columns: repeat(3, 1fr);
    }
 }

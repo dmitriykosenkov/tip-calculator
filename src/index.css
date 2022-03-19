@@ -34,6 +34,9 @@ input {
    border-color: var(--cyan);
    border: none;
 }
+input:focus {
+   outline: 1px solid var(--cyan);
+}
 ::-webkit-input-placeholder {
    color: var(--cyan-400);
    font-size: 18px;
