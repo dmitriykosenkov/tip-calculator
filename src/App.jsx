@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import Form from "./components/Form/Form";
+import Form from "./components/form/Form";
 import Selector from "./components/Selector/Selector";
 import ResultItem from "./components/result/ResultItem";
 
